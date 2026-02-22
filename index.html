@@ -1,11 +1,56 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Expense Tracker</title>
-        <meta charset="UTF-8">
-    </head>
+<head>
+    <title>Expense Tracker</title>
+    <meta charset="UTF-8">
+</head>
 
-    <body>
-        <p>bhyujhbvfghn</p>
-    </body>
+<body>
+
+    <h2>Expense Tracker</h2>
+
+    <form>
+        <label>Expense Description:</label><br>
+        <input type="text" name="description"><br><br>
+
+        <label>Amount:</label><br>
+        <input type="number" name="amount"><br><br>
+
+        <label>Category:</label><br>
+        <select name="category">
+            <option>Food</option>
+            <option>Transport</option>
+            <option>Shopping</option>
+            <option>Bills</option>
+            <option>Other</option>
+        </select><br><br>
+
+        <button type="submit">Add Expense</button>
+    </form>
+
+    <h3>Expense List</h3>
+
+    <table border="1">
+        <tr>
+            <th>Description</th>
+            <th>Amount</th>
+            <th>Category</th>
+        </tr>
+
+        <tr>
+            <td>Lunch</td>
+            <td>200</td>
+            <td>Food</td>
+        </tr>
+
+        <tr>
+            <td>Bus Ticket</td>
+            <td>50</td>
+            <td>Transport</td>
+        </tr>
+    </table>
+
+    <h3>Total: 250</h3>
+
+</body>
 </html>
