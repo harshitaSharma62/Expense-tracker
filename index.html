@@ -2,6 +2,7 @@
 <html>
 <head>
     <title>Expense Tracker</title>
+    <link rel="stylesheet" href="style.css">
     <meta charset="UTF-8">
 </head>
 
@@ -11,13 +12,16 @@
 
     <form>
         <label>Expense Description:</label><br>
-        <input type="text" name="description"><br><br>
+        <!-- add id here -->
+        <input type="text" id="description" placeholder="Enter Description"><br><br>
 
         <label>Amount:</label><br>
-        <input type="number" name="amount"><br><br>
+        <!-- add id here -->
+        <input type="number" id="amount" placeholder="Enter Amount"><br><br>
 
         <label>Category:</label><br>
-        <select name="category">
+        <!-- add id here -->
+        <select id="category">
             <option>Food</option>
             <option>Transport</option>
             <option>Shopping</option>
@@ -25,7 +29,7 @@
             <option>Other</option>
         </select><br><br>
 
-        <button type="submit">Add Expense</button>
+        <button type="button" onclick="addExpense()">Add Expense</button>
     </form>
 
     <h3>Expense List</h3>
@@ -37,20 +41,14 @@
             <th>Category</th>
         </tr>
 
-        <tr>
-            <td>Lunch</td>
-            <td>200</td>
-            <td>Food</td>
-        </tr>
-
-        <tr>
-            <td>Bus Ticket</td>
-            <td>50</td>
-            <td>Transport</td>
-        </tr>
+        <!-- remove old rows and add tbody -->
+        <tbody id="expenseTable"></tbody>
     </table>
 
-    <h3>Total: 250</h3>
+    <!-- add id here -->
+    <h3 id="total">Total: ₹0</h3>
+
+    <script type="module" src="script.js"></script>
 
 </body>
 </html>
